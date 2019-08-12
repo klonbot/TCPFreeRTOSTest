@@ -2689,7 +2689,13 @@ TCPWindow_t *pxTCPWindow = &( pxSocket->u.xTCP.xTCPWindow );
 	pucRecvData will point to the first byte of the TCP payload. */
 	ulReceiveLength = ( uint32_t ) prvCheckRxData( *ppxNetworkBuffer, &pucRecvData );
 
-	FreeRTOS_printf(("%c", *pucRecvData));
+	uint32_t ind = 0;
+	uint8_t* termEchoData = pucRecvData;
+	for (ind = 0; ind < ulReceiveLength; ++ind)
+	{
+		FreeRTOS_printf(("%c", *termEchoData));
+		++termEchoData;
+	}
 
 	if( pxSocket->u.xTCP.ucTCPState >= eESTABLISHED )
 	{
