@@ -1,0 +1,49 @@
+﻿  event_groups.c
+  list.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS\Source\event_groups.c(37,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  heap_4.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS\Source\list.c(30,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  port.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MemMang\heap_4.c(43,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  queue.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS\Source\portable\MSVC-MingW\port.c(32,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  tasks.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS\Source\queue.c(36,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  timers.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS\Source\tasks.c(38,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  FreeRTOS_ARP.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS\Source\timers.c(36,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  FreeRTOS_DHCP.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\FreeRTOS_ARP.c(31,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  FreeRTOS_DNS.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\FreeRTOS_DHCP.c(30,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  FreeRTOS_IP.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\FreeRTOS_DNS.c(30,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  FreeRTOS_Sockets.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\FreeRTOS_IP.c(32,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  FreeRTOS_Stream_Buffer.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\FreeRTOS_Sockets.c(31,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  FreeRTOS_TCP_IP.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\FreeRTOS_Stream_Buffer.c(30,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  FreeRTOS_TCP_WIN.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\FreeRTOS_TCP_IP.c(41,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  FreeRTOS_UDP_IP.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\FreeRTOS_TCP_WIN.c(40,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  BufferAllocation_2.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\FreeRTOS_UDP_IP.c(31,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  NetworkInterface.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\portable\BufferManagement\BufferAllocation_2.c(45,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  SimpleTCPEchoServer.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Source\FreeRTOS-Plus-TCP\portable\NetworkInterface\WinPCap\NetworkInterface.c(28,10): error C1083:  Не удается открыть файл включение: pcap.h: No such file or directory,
+  TCPEchoClient_SingleTasks.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Demo\FreeRTOS_Plus_TCP_Minimal_Windows_Simulator\DemoTasks\SimpleTCPEchoServer.c(84,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  Создание кода...
+  Компиляция...
+  SimpleUDPClientAndServer.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Demo\FreeRTOS_Plus_TCP_Minimal_Windows_Simulator\DemoTasks\TCPEchoClient_SingleTasks.c(46,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  demo_logging.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Demo\FreeRTOS_Plus_TCP_Minimal_Windows_Simulator\DemoTasks\SimpleUDPClientAndServer.c(43,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  main.c
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Demo\FreeRTOS_Plus_TCP_Minimal_Windows_Simulator\demo_logging.c(46,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,
+  Создание кода...
+C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Demo\FreeRTOS_Plus_TCP_Minimal_Windows_Simulator\main.c(40,10): error C1083:  Не удается открыть файл включение: FreeRTOS.h: No such file or directory,

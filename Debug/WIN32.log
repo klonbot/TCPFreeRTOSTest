@@ -1,0 +1,29 @@
+﻿  cl: командная строка warning D9035: использование параметра "Gm" нежелательно, он будет удален в следующих выпусках
+  main.c
+  demo_logging.c
+  TCPEchoClient_SingleTasks.c
+  SimpleUDPClientAndServer.c
+  SimpleTCPEchoServer.c
+  NetworkInterface.c
+  BufferAllocation_2.c
+  FreeRTOS_UDP_IP.c
+  FreeRTOS_TCP_WIN.c
+  FreeRTOS_TCP_IP.c
+  FreeRTOS_Stream_Buffer.c
+  FreeRTOS_Sockets.c
+  FreeRTOS_IP.c
+  FreeRTOS_DNS.c
+  FreeRTOS_DHCP.c
+  FreeRTOS_ARP.c
+  timers.c
+  tasks.c
+  queue.c
+  heap_4.c
+  Создание кода...
+  Компиляция...
+  port.c
+  list.c
+  event_groups.c
+  Создание кода...
+event_groups.obj : warning LNK4075: эх єўшЄ√трхЄё  "/EDITANDCONTINUE" шч-чр ёяхЎшЇшърЎшш "/SAFESEH"
+  WIN32.vcxproj -> C:\work\FreeRTOSv10.1.1\FreeRTOS-Plus\Demo\FreeRTOS_Plus_TCP_Minimal_Windows_Simulator\.\Debug\RTOSDemo.exe
