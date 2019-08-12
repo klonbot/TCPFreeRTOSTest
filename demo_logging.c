@@ -278,14 +278,14 @@ HANDLE xCurrentTask;
 			pcTaskName = pcNoTask;
 		}
 
-		if( strcmp( pcFormat, "\n" ) != 0 )
+		/*if( strcmp( pcFormat, "\n" ) != 0 )
 		{
 			xLength = snprintf( cPrintString, dlMAX_PRINT_STRING_LENGTH, "%lu %lu [%s] ",
 				xMessageNumber++,
 				( unsigned long ) xTaskGetTickCount(),
 				pcTaskName );
 		}
-		else
+		else*/
 		{
 			xLength = 0;
 			memset( cPrintString, 0x00, dlMAX_PRINT_STRING_LENGTH );
@@ -307,7 +307,7 @@ HANDLE xCurrentTask;
 		IP addresses to dot notation on the way. */
 		pcSource = cPrintString;
 		pcTarget = cOutputString;
-
+#if 1
 		while( ( *pcSource ) != '\0' )
 		{
 			*pcTarget = *pcSource;
@@ -337,7 +337,7 @@ HANDLE xCurrentTask;
 				pcSource += 3; /* skip "<n>ip" */
 			}
 		}
-
+#endif
 		/* How far through the buffer was written? */
 		xLength = ( BaseType_t ) ( pcTarget - cOutputString );
 
