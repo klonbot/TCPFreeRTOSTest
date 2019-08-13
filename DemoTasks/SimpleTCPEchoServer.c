@@ -204,6 +204,17 @@ const BaseType_t xBacklog = 20;
 }
 /*-----------------------------------------------------------*/
 
+static void sendToTerminal(uint8_t* buffer, int32_t lBytes)
+{
+	uint32_t ind = 0;
+	for (ind = 0; ind < lBytes; ++ind)
+	{
+		FreeRTOS_printf(("%c", *buffer));
+		++buffer;
+	}
+}
+
+/*-----------------------------------------------------------*/
 static void prvServerConnectionInstance( void *pvParameters )
 {
 int32_t lBytes, lSent, lTotalSent;
@@ -234,30 +245,7 @@ uint8_t *pucRxBuffer;
 			/* Receive data on the socket. */
 			lBytes = FreeRTOS_recv( xConnectedSocket, pucRxBuffer, ipconfigTCP_MSS, 0 );
 
-			/* If data was received, echo it back. */
-			if( lBytes >= 0 )
-			{
-				lSent = 0;
-				lTotalSent = 0;
-
-				/* Call send() until all the data has been sent. */
-				while( ( lSent >= 0 ) && ( lTotalSent < lBytes ) )
-				{
-					lSent = FreeRTOS_send( xConnectedSocket, pucRxBuffer, lBytes - lTotalSent, 0 );
-					lTotalSent += lSent;
-				}
-
-				if( lSent < 0 )
-				{
-					/* Socket closed? */
-					break;
-				}
-			}
-			else
-			{
-				/* Socket closed? */
-				break;
-			}
+			sendToTerminal(pucRxBuffer, lBytes);
 		}
 	}
 
